@@ -1,11 +1,12 @@
 import React, { memo } from 'react'
 import { useRoutes } from 'react-router-dom'
 import routes from '@/router/index'
+import Header from '@/components/Header'
 
 const App = memo(() => {
   return (
     <div>
-      <div className='header'>header</div>
+      <Header/>
       <div className='main'>
         {
           useRoutes(routes)
